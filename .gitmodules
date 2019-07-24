@@ -1,0 +1,3 @@
+[submodule "simple-amt"]
+	path = simple-amt
+	url = https://github.com/kolchinski/humanception-simple-amt
