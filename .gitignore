@@ -1,3 +1,7 @@
+# PyTorch checkpoints
+*.pt
+
+
 distances/progan5000
 .DS_Store*
 
