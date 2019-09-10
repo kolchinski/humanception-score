@@ -1,0 +1,71 @@
+# coding: utf-8
+ls
+with open(val_set_200.txt) as f:
+    lines = f.readlines()
+    
+with open('val_set_200.txt') as f:
+    lines = f.readlines()
+    
+lines
+val_set = [x.strip() for x in lines]
+val_set
+val_set[0]
+import os
+os.lstat
+os.lstat(val_set[0])
+os.lstat(val_set[0]+'fj2')
+ls
+ls imgs_for_labeling/
+ls imgs_for_labeling/run_0/
+for img_set in range(4):
+    for worker_num in range(5):
+        print(img_set*4 + worker_num)
+        
+for img_set in range(4):
+    for worker_num in range(5):
+        print(img_set*5 + worker_num)
+        
+for img_set in range(4):
+    for worker_num in range(5):
+        dst_dir = './imgs_for_labeling/run_0/worker_{}'.format(img_set*5 + worker_num)
+        print(dst_dir)
+        
+        
+val_et
+len(val_set)
+for img_set in range(4):
+    for worker_num in range(5):
+        dst_dir = './imgs_for_labeling/run_0/worker_{}/'.format(img_set*5 + worker_num)
+        for f in val_set[img_set*50 : (img_set+1)*50]:
+            filename = os.path.split(f)[-1]
+            os.system('cp {} {}'.format(f, dst_dir + filename))
+           
+            
+              
+
+            
+for img_set in range(4):
+    for worker_num in range(5):
+        dst_dir = './imgs_for_labeling/run_0/worker_{}/'.format(img_set*5 + worker_num)
+        for f in val_set[img_set*50 : (img_set+1)*50]:
+            filename = os.path.split(f)[-1]
+            os.system('cp {} {}'.format(f, st_dir + 'fake_' + filename))
+            
+for img_set in range(4):
+    for worker_num in range(5):
+        dst_dir = './imgs_for_labeling/run_0/worker_{}/'.format(img_set*5 + worker_num)
+        for f in val_set[img_set*50 : (img_set+1)*50]:
+            filename = os.path.split(f)[-1]
+            os.system('cp {} {}'.format(f, dst_dir + 'fake_' + filename))
+            
+            
+for img_set in range(4):
+    for worker_num in range(5):
+        dst_dir = './imgs_for_labeling/run_0/worker_{}/'.format(img_set*5 + worker_num)
+        for f in val_set[img_set*50 : (img_set+1)*50]:
+            filename = os.path.split(f)[-1]
+            os.system('rm {}'.format(dst_dir + filename))
+            
+            
+            
+%save -r mysession 1-99999
