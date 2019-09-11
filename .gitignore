@@ -110,3 +110,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 distances/imgs_for_labeling
+distances/imgs_by_label/*
