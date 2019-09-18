@@ -113,3 +113,4 @@ distances/imgs_for_labeling
 distances/imgs_by_label/*
 __MACOSX
 celeba500
+.idea
